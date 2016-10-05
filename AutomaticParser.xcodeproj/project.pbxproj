@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5904D3D1026776DED5B6922F /* libPods-AutomaticParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F2B73A8834E0C9AFA3D027 /* libPods-AutomaticParser.a */; };
+		CE15AA981D6B2CCF00C7CD1C /* Details.m in Sources */ = {isa = PBXBuildFile; fileRef = CE15AA971D6B2CCF00C7CD1C /* Details.m */; };
+		CE1626B51D5E0D6700C7DE24 /* NetworkFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1626AB1D5E0D6700C7DE24 /* NetworkFacade.m */; };
+		CE1626B61D5E0D6700C7DE24 /* NetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1626AE1D5E0D6700C7DE24 /* NetworkOperation.m */; };
+		CE1626B71D5E0D6700C7DE24 /* NetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1626B11D5E0D6700C7DE24 /* NetworkRequest.m */; };
+		CE1626B81D5E0D6700C7DE24 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1626B41D5E0D6700C7DE24 /* SessionManager.m */; };
+		CE1626BC1D5E0E3700C7DE24 /* ReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1626BB1D5E0E3700C7DE24 /* ReachabilityManager.m */; };
+		CE1626C11D5E0F1500C7DE24 /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1626C01D5E0F1500C7DE24 /* Weather.m */; };
+		CE1626C61D5E10F900C7DE24 /* ObtainWeatherRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1626C51D5E10F900C7DE24 /* ObtainWeatherRequest.m */; };
+		CE1626CD1D5E1AFC00C7DE24 /* Wind.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1626CC1D5E1AFC00C7DE24 /* Wind.m */; };
+		CEF55A1C1D5DB32A00741CF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF55A1B1D5DB32A00741CF9 /* main.m */; };
+		CEF55A1F1D5DB32A00741CF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF55A1E1D5DB32A00741CF9 /* AppDelegate.m */; };
+		CEF55A221D5DB32A00741CF9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF55A211D5DB32A00741CF9 /* ViewController.m */; };
+		CEF55A251D5DB32A00741CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF55A231D5DB32A00741CF9 /* Main.storyboard */; };
+		CEF55A271D5DB32A00741CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF55A261D5DB32A00741CF9 /* Assets.xcassets */; };
+		CEF55A2A1D5DB32A00741CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF55A281D5DB32A00741CF9 /* LaunchScreen.storyboard */; };
+		CEF55A341D5DB55200741CF9 /* NetworkObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF55A331D5DB55200741CF9 /* NetworkObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7166EB544D019312F8AF329C /* Pods-AutomaticParser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutomaticParser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AutomaticParser/Pods-AutomaticParser.debug.xcconfig"; sourceTree = "<group>"; };
+		84FCC6C41A56942E535F6525 /* Pods-AutomaticParser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutomaticParser.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutomaticParser/Pods-AutomaticParser.release.xcconfig"; sourceTree = "<group>"; };
+		A1F2B73A8834E0C9AFA3D027 /* libPods-AutomaticParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutomaticParser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE15AA961D6B2CCF00C7CD1C /* Details.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Details.h; path = Models/Details/Details.h; sourceTree = "<group>"; };
+		CE15AA971D6B2CCF00C7CD1C /* Details.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Details.m; path = Models/Details/Details.m; sourceTree = "<group>"; };
+		CE1626AA1D5E0D6700C7DE24 /* NetworkFacade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkFacade.h; sourceTree = "<group>"; };
+		CE1626AB1D5E0D6700C7DE24 /* NetworkFacade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkFacade.m; sourceTree = "<group>"; };
+		CE1626AD1D5E0D6700C7DE24 /* NetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkOperation.h; sourceTree = "<group>"; };
+		CE1626AE1D5E0D6700C7DE24 /* NetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkOperation.m; sourceTree = "<group>"; };
+		CE1626B01D5E0D6700C7DE24 /* NetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkRequest.h; sourceTree = "<group>"; };
+		CE1626B11D5E0D6700C7DE24 /* NetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkRequest.m; sourceTree = "<group>"; };
+		CE1626B31D5E0D6700C7DE24 /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
+		CE1626B41D5E0D6700C7DE24 /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
+		CE1626BA1D5E0E3700C7DE24 /* ReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityManager.h; sourceTree = "<group>"; };
+		CE1626BB1D5E0E3700C7DE24 /* ReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityManager.m; sourceTree = "<group>"; };
+		CE1626BF1D5E0F1500C7DE24 /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Weather.h; path = Models/Weather/Weather.h; sourceTree = "<group>"; };
+		CE1626C01D5E0F1500C7DE24 /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Weather.m; path = Models/Weather/Weather.m; sourceTree = "<group>"; };
+		CE1626C41D5E10F900C7DE24 /* ObtainWeatherRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ObtainWeatherRequest.h; path = Requests/ObtainWeatherRequest/ObtainWeatherRequest.h; sourceTree = "<group>"; };
+		CE1626C51D5E10F900C7DE24 /* ObtainWeatherRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ObtainWeatherRequest.m; path = Requests/ObtainWeatherRequest/ObtainWeatherRequest.m; sourceTree = "<group>"; };
+		CE1626CB1D5E1AFC00C7DE24 /* Wind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wind.h; path = Models/Wind/Wind.h; sourceTree = "<group>"; };
+		CE1626CC1D5E1AFC00C7DE24 /* Wind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Wind.m; path = Models/Wind/Wind.m; sourceTree = "<group>"; };
+		CEF55A171D5DB32A00741CF9 /* AutomaticParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomaticParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF55A1B1D5DB32A00741CF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEF55A1D1D5DB32A00741CF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEF55A1E1D5DB32A00741CF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEF55A201D5DB32A00741CF9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CEF55A211D5DB32A00741CF9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CEF55A241D5DB32A00741CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEF55A261D5DB32A00741CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEF55A291D5DB32A00741CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEF55A2B1D5DB32A00741CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEF55A321D5DB55200741CF9 /* NetworkObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkObject.h; path = NetworkObject/NetworkObject.h; sourceTree = "<group>"; };
+		CEF55A331D5DB55200741CF9 /* NetworkObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkObject.m; path = NetworkObject/NetworkObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEF55A141D5DB32A00741CF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5904D3D1026776DED5B6922F /* libPods-AutomaticParser.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19DD08DCA8DE06E0CC25E69D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7166EB544D019312F8AF329C /* Pods-AutomaticParser.debug.xcconfig */,
+				84FCC6C41A56942E535F6525 /* Pods-AutomaticParser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE15AA921D6B2C9600C7CD1C /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				CE15AA961D6B2CCF00C7CD1C /* Details.h */,
+				CE15AA971D6B2CCF00C7CD1C /* Details.m */,
+			);
+			name = Details;
+			sourceTree = "<group>";
+		};
+		CE1626A81D5E0D6700C7DE24 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626C21D5E10CF00C7DE24 /* Requests */,
+				CE1626B91D5E0E3700C7DE24 /* ReachabilityManager */,
+				CE1626A91D5E0D6700C7DE24 /* NetworkFacade */,
+				CE1626AC1D5E0D6700C7DE24 /* NetworkOperation */,
+				CE1626AF1D5E0D6700C7DE24 /* NetworkRequest */,
+				CE1626B21D5E0D6700C7DE24 /* SessionManager */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CE1626A91D5E0D6700C7DE24 /* NetworkFacade */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626AA1D5E0D6700C7DE24 /* NetworkFacade.h */,
+				CE1626AB1D5E0D6700C7DE24 /* NetworkFacade.m */,
+			);
+			path = NetworkFacade;
+			sourceTree = "<group>";
+		};
+		CE1626AC1D5E0D6700C7DE24 /* NetworkOperation */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626AD1D5E0D6700C7DE24 /* NetworkOperation.h */,
+				CE1626AE1D5E0D6700C7DE24 /* NetworkOperation.m */,
+			);
+			path = NetworkOperation;
+			sourceTree = "<group>";
+		};
+		CE1626AF1D5E0D6700C7DE24 /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626B01D5E0D6700C7DE24 /* NetworkRequest.h */,
+				CE1626B11D5E0D6700C7DE24 /* NetworkRequest.m */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		CE1626B21D5E0D6700C7DE24 /* SessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626B31D5E0D6700C7DE24 /* SessionManager.h */,
+				CE1626B41D5E0D6700C7DE24 /* SessionManager.m */,
+			);
+			path = SessionManager;
+			sourceTree = "<group>";
+		};
+		CE1626B91D5E0E3700C7DE24 /* ReachabilityManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626BA1D5E0E3700C7DE24 /* ReachabilityManager.h */,
+				CE1626BB1D5E0E3700C7DE24 /* ReachabilityManager.m */,
+			);
+			path = ReachabilityManager;
+			sourceTree = "<group>";
+		};
+		CE1626BD1D5E0EF700C7DE24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE15AA921D6B2C9600C7CD1C /* Details */,
+				CE1626C71D5E1AD400C7DE24 /* Wind */,
+				CE1626BE1D5E0EFD00C7DE24 /* Weather */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CE1626BE1D5E0EFD00C7DE24 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626BF1D5E0F1500C7DE24 /* Weather.h */,
+				CE1626C01D5E0F1500C7DE24 /* Weather.m */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
+		CE1626C21D5E10CF00C7DE24 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626C31D5E10D300C7DE24 /* ObtainWeatherRequest */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		CE1626C31D5E10D300C7DE24 /* ObtainWeatherRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626C41D5E10F900C7DE24 /* ObtainWeatherRequest.h */,
+				CE1626C51D5E10F900C7DE24 /* ObtainWeatherRequest.m */,
+			);
+			name = ObtainWeatherRequest;
+			sourceTree = "<group>";
+		};
+		CE1626C71D5E1AD400C7DE24 /* Wind */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626CB1D5E1AFC00C7DE24 /* Wind.h */,
+				CE1626CC1D5E1AFC00C7DE24 /* Wind.m */,
+			);
+			name = Wind;
+			sourceTree = "<group>";
+		};
+		CEF55A0E1D5DB32A00741CF9 = {
+			isa = PBXGroup;
+			children = (
+				CEF55A191D5DB32A00741CF9 /* AutomaticParser */,
+				CEF55A181D5DB32A00741CF9 /* Products */,
+				19DD08DCA8DE06E0CC25E69D /* Pods */,
+				EE9E849239B558422BCE00C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEF55A181D5DB32A00741CF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEF55A171D5DB32A00741CF9 /* AutomaticParser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEF55A191D5DB32A00741CF9 /* AutomaticParser */ = {
+			isa = PBXGroup;
+			children = (
+				CE1626BD1D5E0EF700C7DE24 /* Models */,
+				CE1626A81D5E0D6700C7DE24 /* Networking */,
+				CEF55A311D5DB52200741CF9 /* NetworkObject */,
+				CEF55A1D1D5DB32A00741CF9 /* AppDelegate.h */,
+				CEF55A1E1D5DB32A00741CF9 /* AppDelegate.m */,
+				CEF55A201D5DB32A00741CF9 /* ViewController.h */,
+				CEF55A211D5DB32A00741CF9 /* ViewController.m */,
+				CEF55A231D5DB32A00741CF9 /* Main.storyboard */,
+				CEF55A261D5DB32A00741CF9 /* Assets.xcassets */,
+				CEF55A281D5DB32A00741CF9 /* LaunchScreen.storyboard */,
+				CEF55A2B1D5DB32A00741CF9 /* Info.plist */,
+				CEF55A1A1D5DB32A00741CF9 /* Supporting Files */,
+			);
+			path = AutomaticParser;
+			sourceTree = "<group>";
+		};
+		CEF55A1A1D5DB32A00741CF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEF55A1B1D5DB32A00741CF9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEF55A311D5DB52200741CF9 /* NetworkObject */ = {
+			isa = PBXGroup;
+			children = (
+				CEF55A321D5DB55200741CF9 /* NetworkObject.h */,
+				CEF55A331D5DB55200741CF9 /* NetworkObject.m */,
+			);
+			name = NetworkObject;
+			sourceTree = "<group>";
+		};
+		EE9E849239B558422BCE00C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F2B73A8834E0C9AFA3D027 /* libPods-AutomaticParser.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEF55A161D5DB32A00741CF9 /* AutomaticParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEF55A2E1D5DB32A00741CF9 /* Build configuration list for PBXNativeTarget "AutomaticParser" */;
+			buildPhases = (
+				87708CF7DAB2745AD04C01A0 /* [CP] Check Pods Manifest.lock */,
+				CEF55A131D5DB32A00741CF9 /* Sources */,
+				CEF55A141D5DB32A00741CF9 /* Frameworks */,
+				CEF55A151D5DB32A00741CF9 /* Resources */,
+				98107B00AB47C2577620E504 /* [CP] Embed Pods Frameworks */,
+				EFFBE2F2536BF63B131B4D7E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutomaticParser;
+			productName = AutomaticParser;
+			productReference = CEF55A171D5DB32A00741CF9 /* AutomaticParser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEF55A0F1D5DB32A00741CF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = PrivatBank;
+				TargetAttributes = {
+					CEF55A161D5DB32A00741CF9 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 73P7R6XXDH;
+					};
+				};
+			};
+			buildConfigurationList = CEF55A121D5DB32A00741CF9 /* Build configuration list for PBXProject "AutomaticParser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEF55A0E1D5DB32A00741CF9;
+			productRefGroup = CEF55A181D5DB32A00741CF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEF55A161D5DB32A00741CF9 /* AutomaticParser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEF55A151D5DB32A00741CF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF55A2A1D5DB32A00741CF9 /* LaunchScreen.storyboard in Resources */,
+				CEF55A271D5DB32A00741CF9 /* Assets.xcassets in Resources */,
+				CEF55A251D5DB32A00741CF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87708CF7DAB2745AD04C01A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		98107B00AB47C2577620E504 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutomaticParser/Pods-AutomaticParser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFFBE2F2536BF63B131B4D7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AutomaticParser/Pods-AutomaticParser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEF55A131D5DB32A00741CF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1626C11D5E0F1500C7DE24 /* Weather.m in Sources */,
+				CE1626BC1D5E0E3700C7DE24 /* ReachabilityManager.m in Sources */,
+				CE1626B81D5E0D6700C7DE24 /* SessionManager.m in Sources */,
+				CE1626B61D5E0D6700C7DE24 /* NetworkOperation.m in Sources */,
+				CE1626B51D5E0D6700C7DE24 /* NetworkFacade.m in Sources */,
+				CE1626B71D5E0D6700C7DE24 /* NetworkRequest.m in Sources */,
+				CEF55A221D5DB32A00741CF9 /* ViewController.m in Sources */,
+				CEF55A1F1D5DB32A00741CF9 /* AppDelegate.m in Sources */,
+				CEF55A1C1D5DB32A00741CF9 /* main.m in Sources */,
+				CE1626C61D5E10F900C7DE24 /* ObtainWeatherRequest.m in Sources */,
+				CE1626CD1D5E1AFC00C7DE24 /* Wind.m in Sources */,
+				CEF55A341D5DB55200741CF9 /* NetworkObject.m in Sources */,
+				CE15AA981D6B2CCF00C7CD1C /* Details.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEF55A231D5DB32A00741CF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF55A241D5DB32A00741CF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEF55A281D5DB32A00741CF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEF55A291D5DB32A00741CF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEF55A2C1D5DB32A00741CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEF55A2D1D5DB32A00741CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEF55A2F1D5DB32A00741CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7166EB544D019312F8AF329C /* Pods-AutomaticParser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AutomaticParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PrivatBank.AutomaticParser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		CEF55A301D5DB32A00741CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84FCC6C41A56942E535F6525 /* Pods-AutomaticParser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = AutomaticParser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PrivatBank.AutomaticParser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEF55A121D5DB32A00741CF9 /* Build configuration list for PBXProject "AutomaticParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF55A2C1D5DB32A00741CF9 /* Debug */,
+				CEF55A2D1D5DB32A00741CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEF55A2E1D5DB32A00741CF9 /* Build configuration list for PBXNativeTarget "AutomaticParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF55A2F1D5DB32A00741CF9 /* Debug */,
+				CEF55A301D5DB32A00741CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEF55A0F1D5DB32A00741CF9 /* Project object */;
+}
