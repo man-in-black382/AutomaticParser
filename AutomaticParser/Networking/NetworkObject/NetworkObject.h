@@ -17,7 +17,7 @@
 @property (strong, nonatomic) NSDictionary *JSONRepresentation;
 
 + (instancetype)objectFromJSON:(NSDictionary *)json;
-+ (NSArray<NetworkObject *> *)objectsFromJSON:(NSArray *)json;
++ (NSArray *)objectsFromJSON:(NSArray *)json;
 
 - (NSDictionary *)map;
 - (NSDictionary *)invertedMap;

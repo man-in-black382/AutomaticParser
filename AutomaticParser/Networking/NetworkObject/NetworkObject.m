@@ -13,7 +13,6 @@ static NSString *const DefaultDateFormat = @"yyyy-MM-dd'T'HH:mm'+0000'";
 static NSString *const ParseDateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
 
 /*!
- @class NetworkObject
  @discussion Class designed to provide automatic parsing of back-end responses into PONSO objects.
  Custom parsing rules for specific cases can be implemented by overriding -adaptJSONObject:forKey: and -adaptedObjectForJSONFromKey: methods.
  */
@@ -24,7 +23,7 @@ static NSString *const ParseDateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
 /**
  *  Returns object with properties filled with NSDictionary received from back-end.
  *
- *  @param data JSON data received from back-end.
+ *  @param json JSON data received from back-end.
  *
  *  @return Initialized model object
  */
@@ -35,7 +34,7 @@ static NSString *const ParseDateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
     return object;
 }
 
-+ (NSArray<NetworkObject *> *)objectsFromJSON:(NSArray *)json
++ (NSArray *)objectsFromJSON:(NSArray *)json
 {
     return [self objectsOfClass:self fromJSONArray:json];
 }
@@ -158,12 +157,7 @@ static NSString *const ParseDateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
     __weak typeof(self) weakSelf = self;
     [mappingKeys enumerateKeysAndObjectsUsingBlock:^(id objectPropertyName, id JSONPropertyName, BOOL *stop) {
         id JSONObject = [JSONRepresentation valueForKeyPath:JSONPropertyName];
-        
-        if (!JSONObject) {
-            [NSException raise:NSInternalInconsistencyException format:@"Value for JSON key %@ is nil", JSONPropertyName];
-            return;
-        }
-        
+
         objc_property_t property = class_getProperty([weakSelf class], [objectPropertyName UTF8String]);
         Class propertyClass = [self classOfProperty:property];
         
@@ -202,12 +196,7 @@ static NSString *const ParseDateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
     __weak typeof(self) weakSelf = self;
     [invertedMappingKeys enumerateKeysAndObjectsUsingBlock:^(id objectPropertyName, id JSONPropertyName, BOOL *stop) {
         id propertyValue = [weakSelf valueForKey:objectPropertyName];
-        
-        if (!propertyValue) {
-            [NSException raise:NSInternalInconsistencyException format:@"Value for key %@ is nil, which is unacceptable. You may want to override %@ to return a specific value when the value for this key is nil.", objectPropertyName, NSStringFromSelector(@selector(adaptedObjectForJSONFromKey:))];
-            return;
-        }
-        
+
         if ([propertyValue isKindOfClass:[NetworkObject class]]) {
             [JSONDictionary setObject:[(NetworkObject *)propertyValue JSONRepresentation] forKey:JSONPropertyName];
         } else if ([propertyValue isKindOfClass:[NSArray class]]){
@@ -235,9 +224,13 @@ static NSString *const ParseDateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
 {
     objc_property_t property = class_getProperty([self class], [key UTF8String]);
     Class propertyClass = [self classOfProperty:property];
-    
+
     if (!propertyClass) {
         return JSONObject;
+    }
+    
+    if (JSONObject == [NSNull null]) {
+        return nil;
     }
     
     if ([propertyClass isSubclassOfClass:[NSURL class]]) {
@@ -266,6 +259,10 @@ static NSString *const ParseDateFormat = @"yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
 - (id)adaptedObjectForJSONFromKey:(NSString *)key
 {
     id propertyValue = [self valueForKey:key];
+    
+    if (!propertyValue) {
+        return [NSNull null];
+    }
     
     if ([propertyValue isKindOfClass:[NSDate class]]) {
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
